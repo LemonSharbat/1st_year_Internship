@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <style>
+        /* Center everything */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Hide default file input */
+        #imageUpload {
+            display: none;
+        }
+
+        /* Style for custom upload button */
+        .upload-label {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .upload-label:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the displayed image */
+        #displayImage {
+            max-width: 400px;
+            max-height: 400px;
+            display: none;
+            margin-top: 10px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        /* Style for buttons */
+        .action-buttons button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Upload Button -->
+    <label for="imageUpload" class="upload-label">Upload Image</label>
+    <input type="file" id="imageUpload" accept="image/*">
+    
+    <!-- Display Image -->
+    <br>
+    <img id="displayImage">
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button>Black & White</button>
+        <button>Crop</button>
+        <button>Rotate</button>
+        <button>Image Enhancement</button>
+    </div>
+
+    <script>
+        // Display selected image with proper scaling
+        document.getElementById('imageUpload').addEventListener('change', function(event) {
+            let imgTag = document.getElementById('displayImage');
+            let file = event.target.files[0];
+
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    imgTag.src = e.target.result;
+                    imgTag.style.display = 'block'; // Show the image
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+</body>
+</html>
+

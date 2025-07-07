@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1, h2, h3 {
+            color: #4fc3f7;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #4fc3f7;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #81d4fa;
+            margin-top: 30px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+            text-align: justify;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 20px;
+        }
+        
+        .image-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .section-image {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+        
+        .nav-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .advantages-list li::before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .limitations-list li::before {
+            content: "⚠";
+            color: #f44336;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+            }
+            
+            .text-content, .image-content {
+                padding-right: 0;
+            }
+            
+            .nav-button {
+                position: static;
+                display: block;
+                margin: 20px auto;
+                width: fit-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="page2.html" class="nav-button">Image Enhancement</a>
+        
+        <header>
+            <img src="https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg" 
+                 alt="AI Header Image" class="header-image">
+            <h1>INTRODUCTION TO ARTIFICIAL INTELLIGENCE</h1>
+        </header>
+        
+        <section class="content-section">
+            <div class="text-content">
+                <p>
+                    Artificial Intelligence (AI) is a branch of computer science that focuses on 
+                    creating systems capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, 
+                    problem-solving, perception, and language understanding. AI aims to simulate human cognitive abilities to enhance efficiency, automate 
+                    processes, and solve complex problems across various industries.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="https://m.foolcdn.com/media/dubs/images/Robot-AI-image-Getty-Images.original.jpg" 
+                     alt="AI Image" class="section-image">
+            </div>
+        </section>
+        
+        <section>
+            <h2>ADVANTAGES OF AI</h2>
+            <ul class="advantages-list">
+                <li><strong>Increased efficiency:</strong> AI automates repetitive tasks, speeding up processes and reducing the time required for human involvement.</li>
+                <li><strong>Cost savings:</strong> Automating work and improving accuracy, AI can help businesses cut costs, especially in areas like labor and error reduction.</li>
+                <li><strong>24/7 availability:</strong> AI systems can operate continuously without the need for breaks or sleep, making them ideal for tasks that require constant attention.</li>
+                <li><strong>Data analysis:</strong> AI can process and analyze vast amounts of data much faster than humans, uncovering insights that would be difficult to detect otherwise.</li>
+                <li><strong>Precision and accuracy:</strong> AI systems can perform tasks with high precision, reducing human errors in fields like medicine and manufacturing.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>APPLICATIONS OF AI</h2>
+            <div class="content-section">
+                <div class="text-content">
+                    <ul>
+                        <li><strong>Customer Service:</strong> AI automates customer service by using chatbots to handle inquiries and provide instant responses.</li>
+                        <li><strong>Healthcare:</strong> AI enhances medical diagnoses by analyzing patient data for patterns and assisting in treatment planning.</li>
+                        <li><strong>Entertainment:</strong> AI personalizes content recommendations on platforms like Netflix and Spotify based on user preferences.</li>
+                        <li><strong>Transportation:</strong> AI assists in autonomous vehicle navigation by processing real-time sensor data and making driving decisions.</li>
+                        <li><strong>Finance:</strong> AI detects fraud in banking by recognizing unusual transaction patterns and suspicious activities.</li>
+                        <li><strong>Manufacturing:</strong> AI optimizes production lines, predicts maintenance needs, and improves quality control.</li>
+                        <li><strong>Education:</strong> AI enables personalized learning experiences and automated grading systems.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>LIMITATIONS OF AI</h2>
+            <ul class="limitations-list">
+                <li><strong>Data dependency:</strong> AI requires large amounts of quality data to function effectively, which may not always be available.</li>
+                <li><strong>Bias potential:</strong> AI systems can inherit and amplify biases present in their training data, leading to unfair outcomes.</li>
+                <li><strong>Lack of emotional intelligence:</strong> AI cannot truly understand human emotions, empathy, or context in the way humans do.</li>
+                <li><strong>Creativity limitations:</strong> While AI can mimic creativity, it struggles with genuine innovation or abstract thinking beyond its programming.</li>
+                <li><strong>High costs:</strong> Developing and maintaining sophisticated AI models can be prohibitively expensive for many organizations.</li>
+                <li><strong>Job displacement:</strong> AI automation may lead to job losses in certain sectors, requiring workforce retraining.</li>
+                <li><strong>Ethical concerns:</strong> AI raises complex questions about privacy, decision-making authority, and accountability.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>FUTURE OF AI</h2>
+            <p>
+                The future of AI holds tremendous potential as the technology continues to advance. We can expect more sophisticated natural language processing, 
+                improved computer vision, and more human-like interactions with AI systems. However, this progress also brings challenges that need to be addressed, 
+                including ethical considerations, regulation, and the societal impact of increasingly capable AI systems. The development of Artificial General Intelligence 
+                (AGI) - AI that can understand, learn, and apply knowledge across diverse domains like a human - remains a long-term goal for researchers.
+            </p>
+        </section>
+        
+        <div class="signature">
+            <p><strong>Designed by<br>
+            NISHMITH<br>
+            C-SECTION</strong></p>
+        </div>
+    </div>
+</body>
+</html>
